@@ -1,0 +1,32 @@
+#pref_tel{
+    width: 30px;
+}
+h1{
+    color: white;
+}
+label{
+    color: white;
+}
+::-webkit-input-placeholder { color: white; }
+#num_tel{
+    width: 130px;
+}
+#dia_nac,#mes_nac,#anio_nac{
+    width: 30px;
+}
+#comentarios{
+    height: 150px;
+    width: 500px;
+    background: inherit;
+    border-color: green;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+input{
+    background: inherit;
+}
+#enviar{
+    background-image: url(img/botones.png);
+    color: white;
+}

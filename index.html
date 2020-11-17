@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body background="img/fondo_pagina.png">
+        <div style="background:url(img/botones.png); padding: 10px; padding-bottom: 90px;">
+            <img src="img/texto_inicial.png">
+            <hr>
+            <form>
+                <table>
+                    <tr>
+                        <td><label>Nombre:</label></td>
+                        <td><input id="nom" type="text" placeholder="Nombre"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Apellidos:</label></td>
+                        <td><input id="apes" type="text" placeholder="Apellidos"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Correo:</label></td>
+                        <td><input id="email" type="email" placeholder="ejemplo@mail.es" pattern="[a-z]{1-256}@[a-z]{1-256}.es"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Contraseña:</label></td>
+                        <td><input id="contra" type="password" placeholder="******"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Repite contraseña:</label></td>
+                        <td><input id="repite_contra" type="password" placeholder="******"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Telefono:</label></td>
+                        <td><input id="pref_tel" type="text" placeholder="+00"><input id="num_tel" type="number" placeholder="666666666"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Nombre de usuario:</label></td>
+                        <td><input id="usuario" type="text" placeholder="Usuario"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Fecha de nacimiento:</label></td>
+                        <td><input id="dia_nac" type="text" placeholder="dd"><b>/</b><input id="mes_nac" type="text" placeholder="mm"><b>/</b><input id="anio_nac" type="text" placeholder="aaaa"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>Otros comentarios:</label><br>
+                            <textarea id="comentarios" placeholder="Introduce aquí tu comentario"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" id="enviar"></input>
+            </form>
+        </div>
+        <script src="js/acciones.js"></script>
+    </body>
+</html>
