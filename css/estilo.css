@@ -27,6 +27,9 @@ input{
     background: inherit;
 }
 #enviar{
-    background-image: url(img/botones.png);
+    background:inherit;
     color: white;
+}
+div{
+    margin-top: 3%;
 }
