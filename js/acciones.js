@@ -15,17 +15,17 @@ function comprobarCosas(){
     var enviar = document.getElementById("enviar");
     var contra = document.getElementById("contra");
     var repite_contra = document.getElementById("repite_contra");
+    var tratamiento_datos = document.getElementById("tratamiento_datos");
     console.log(pref_tel.value);
     if(pref_tel.value.match(regex_correo)){
-        console.log("El correo es correcto");
+        tratamiento_datos.innerHTML = "todo puta madre"
     }else{
-        console.log("El correo es incorrecto");
+        tratamiento_datos.innerHTML = "El correo es incorrecto";
     }
     if(contra==repite_contra){
-        console.log("las contraseñas no coinciden");
+        tratamiento_datos.innerHTML = tratamiento_datos.innerHTML + "<br>Las contraseñas coinciden";
     }else{
-        console.log("las contraseñas coinciden");
+        tratamiento_datos.innerHTML = tratamiento_datos.innerHTML + "<br>Las contraseñas no coinciden";
     }
 }
-enviar.addEventListener("click",comprobarCosas());
 
