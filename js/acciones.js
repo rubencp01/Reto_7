@@ -13,7 +13,6 @@ function comprobarCosas(){
     var dia_nac = document.getElementById("dia_nac").value;
     var mes_nac = document.getElementById("mes_nac").value;
     var anio_nac = document.getElementById("anio_nac").value;
-    var enviar = document.getElementById("enviar");
     var contra = document.getElementById("contra").value;
     var repite_contra = document.getElementById("repite_contra").value;
     var tratamiento_datos = document.getElementById("tratamiento_datos");
@@ -27,7 +26,7 @@ function comprobarCosas(){
         if(num_tel===null||num_tel<100000000||num_tel>999999999){
             tratamiento_datos.innerHTML = tratamiento_datos.innerHTML + "<br>El número es incorrecto";
         }
-        if(usuario===null){
+        if(usuario===""){
             tratamiento_datos.innerHTML = tratamiento_datos.innerHTML + "<br>Introduce un nombre de usuario";
         }
         if(!regex_correo.test(correo)){
