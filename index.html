@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <td><label>Correo:</label></td>
-                        <td><input id="email" type="email" placeholder="ejemplo@mail.es" pattern="[a-z]{1-256}@[a-z]{1-256}.es"></td>
+                        <td><input id="email" type="email" placeholder="ejemplo@mail.es"></td>
                     </tr>
                     <tr>
                         <td><label>Contraseña:</label></td>
@@ -52,7 +52,12 @@
             </form>
             <button id="enviar" onclick="comprobarCosas()">Enviar</button>
         </div>
-        <div id="tratamiento_datos" style="background: url(img/divTratamientoDatos.png); width: 26.38%;"></div>
+        <table>
+            <tr>
+                <td><div id="tratamiento_datos" style="background: url(img/divTratamientoDatos.png); width: 300px; height: 300px;"></div></td>
+                <td><div id="desbloqueo" style="background: url(img/divDesbloqueo.jpg); width: 225px; height: 225px;"></div></td>
+            </tr>
+        </table>
         <script src="js/acciones.js"></script>
     </body>
 </html>
