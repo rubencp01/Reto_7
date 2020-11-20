@@ -42,7 +42,7 @@ function comprobarCosas(){
         }else{
             correoCorrecto = true;
         }
-        if(!(contra===repite_contra||contra==="")){
+        if(!(contra===repite_contra||(contra===""&&repite_contra===""))){
             tratamiento_datos.innerHTML = tratamiento_datos.innerHTML + "<br>Las contraseñas no coinciden";
         }else{
             contrasCorrecta = true;
@@ -110,4 +110,3 @@ function validarFecha ( d, m, a ){
     }
     return ok;
 }
-
